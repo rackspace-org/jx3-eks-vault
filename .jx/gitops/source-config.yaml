@@ -9,6 +9,7 @@ spec:
     providerKind: github
     repositories:
     - name: node-lab
+    - name: paul-golang-http
     - name: paul-node-http
     scheduler: in-repo
   slack:
