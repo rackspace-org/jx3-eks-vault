@@ -1,0 +1,17 @@
+filepath: ""
+environments:
+  default:
+    values:
+    - jx-values.yaml
+namespace: jx-staging
+repositories:
+- name: dev
+  url: http://chartmuseum-jx.44.194.207.150.nip.io
+releases:
+- chart: dev/paul-golang-http
+  version: 0.0.1
+  name: paul-golang-http
+  values:
+  - jx-values.yaml
+templates: {}
+renderedvalues: {}
