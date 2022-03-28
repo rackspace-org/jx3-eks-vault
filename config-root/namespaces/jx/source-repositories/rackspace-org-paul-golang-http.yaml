@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: rackspace-org
+    provider: github
+    repository: paul-golang-http
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: rackspace-org-paul-golang-http
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/rackspace-org/paul-golang-http.git
+  org: rackspace-org
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: paul-golang-http
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/rackspace-org/paul-golang-http

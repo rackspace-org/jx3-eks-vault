@@ -9,6 +9,7 @@ data:
       enabled:
         rackspace-org/jx3-eks-vault: true
         rackspace-org/node-lab: true
+        rackspace-org/paul-golang-http: true
         rackspace-org/paul-node-http: true
     plank: {}
     pod_namespace: jx
@@ -23,6 +24,7 @@ data:
       merge_method:
         rackspace-org/jx3-eks-vault: merge
         rackspace-org/node-lab: merge
+        rackspace-org/paul-golang-http: merge
         rackspace-org/paul-node-http: merge
       queries:
       - labels:
@@ -36,6 +38,7 @@ data:
         repos:
         - rackspace-org/jx3-eks-vault
         - rackspace-org/node-lab
+        - rackspace-org/paul-golang-http
         - rackspace-org/paul-node-http
       - labels:
         - updatebot
@@ -48,6 +51,7 @@ data:
         repos:
         - rackspace-org/jx3-eks-vault
         - rackspace-org/node-lab
+        - rackspace-org/paul-golang-http
         - rackspace-org/paul-node-http
       target_url: http://lighthouse-jx.44.194.207.150.nip.io/merge/status
 kind: ConfigMap
