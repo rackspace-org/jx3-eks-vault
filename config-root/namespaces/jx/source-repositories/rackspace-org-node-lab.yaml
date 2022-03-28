@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: rackspace-org
+    provider: github
+    repository: node-lab
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: rackspace-org-node-lab
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/rackspace-org/node-lab.git
+  org: rackspace-org
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: node-lab
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/rackspace-org/node-lab
