@@ -1,0 +1,10 @@
+# Source: paul-golang-http/templates/sa.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: paul-golang-http-paul-golang-http
+  annotations:
+    meta.helm.sh/release-name: 'paul-golang-http'
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'

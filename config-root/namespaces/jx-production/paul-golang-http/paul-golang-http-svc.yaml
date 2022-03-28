@@ -1,0 +1,20 @@
+# Source: paul-golang-http/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: paul-golang-http
+  labels:
+    chart: "paul-golang-http-0.0.1"
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'paul-golang-http'
+  namespace: jx-production
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: 8080
+      protocol: TCP
+      name: http
+  selector:
+    app: paul-golang-http-paul-golang-http
