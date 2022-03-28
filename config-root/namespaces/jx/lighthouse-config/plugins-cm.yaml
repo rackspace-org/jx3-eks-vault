@@ -12,6 +12,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - rackspace-org/paul-golang-http
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - rackspace-org/paul-node-http
       require_self_approval: true
     cat: {}
@@ -30,6 +34,11 @@ data:
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
       rackspace-org/node-lab:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      rackspace-org/paul-golang-http:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
@@ -77,6 +86,22 @@ data:
       - cat
       - dog
       - pony
+      rackspace-org/paul-golang-http:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       rackspace-org/paul-node-http:
       - approve
       - assign
@@ -107,6 +132,9 @@ data:
       trusted_org: todo
     - repos:
       - rackspace-org/node-lab
+      trusted_org: todo
+    - repos:
+      - rackspace-org/paul-golang-http
       trusted_org: todo
     - repos:
       - rackspace-org/paul-node-http
