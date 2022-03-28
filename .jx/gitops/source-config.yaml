@@ -9,6 +9,7 @@ spec:
     providerKind: github
     repositories:
     - name: node-lab
+    - name: paul-node-http
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
