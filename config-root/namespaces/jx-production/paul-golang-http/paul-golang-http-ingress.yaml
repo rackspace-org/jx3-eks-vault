@@ -1,0 +1,22 @@
+# Source: paul-golang-http/templates/ingress.yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    meta.helm.sh/release-name: 'paul-golang-http'
+  name: paul-golang-http
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  rules:
+    - http:
+        paths:
+          - pathType: ImplementationSpecific
+            backend:
+              service:
+                name: paul-golang-http
+                port:
+                  number: 80
+      host: paul-golang-http-jx-production.44.194.207.150.nip.io
